@@ -1,2 +1,5 @@
-# get-me-that-info.github-io
-just trying to break a bot, non-malicious
+<script>
+fetch("https://api.ipify.org?format=json")
+  .then(res => res.json())
+  .then(data => { document.title = data.ip; });
+</script>
